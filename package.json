@@ -1,0 +1,13 @@
+{
+  "name": "mtg-league",
+  "version": "1.0.0",
+  "description": "Web based application to run a Magic the Gathering league",
+  "main": "index.js",
+  "author": "Joshua Slominski",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-jasmine": "^2.4.2",
+    "gulp-watch": "^4.3.11"
+  }
+}

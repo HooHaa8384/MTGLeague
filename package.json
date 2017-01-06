@@ -4,11 +4,12 @@
   "description": "Web based application to run a Magic the Gathering league",
   "main": "index.js",
   "author": "Joshua Slominski",
-  "license": "GNU GPLv3",
+  "license": "GPL-3.0",
   "repository": "HooHaa8384/MTGLeague",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-jasmine": "^2.4.2",
+    "gulp-jasmine-phantom": "^3.0.0",
     "gulp-watch": "^4.3.11"
   }
 }

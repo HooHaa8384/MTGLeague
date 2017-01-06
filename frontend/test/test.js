@@ -4,6 +4,6 @@ describe("A suite", () => {
   });
 
   it("returns true", () => {
-    expect(isTrue()).toBe(false);
+    expect(isTrue()).toBe(true);
   });
 });

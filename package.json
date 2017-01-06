@@ -8,8 +8,11 @@
   "repository": "HooHaa8384/MTGLeague",
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-jasmine": "^2.4.2",
-    "gulp-jasmine-phantom": "^3.0.0",
-    "gulp-watch": "^4.3.11"
+    "gulp-watch": "^4.3.11",
+    "jasmine-core": "^2.5.2",
+    "karma": "^1.3.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-firefox-launcher": "^1.0.0",
+    "karma-jasmine": "^1.1.0"
   }
 }

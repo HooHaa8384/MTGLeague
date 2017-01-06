@@ -1,14 +1,16 @@
 var gulp =require('gulp'),
-    jasmine = require('gulp-jasmine'),
+    karmaServer = require('karma').Server,
     watch = require('gulp-watch');
 
-gulp.task('jasmine', () => {
-  return gulp.src('frontend/test/*.js')
-    .pipe(jasmine({"verbose" : true, "config": {"helpers": ["../src/test.js"]}}));
+gulp.task('jasmine', (done) => {
+  new karmaServer({
+    configFile: __dirname + "/karma.conf.js",
+    singleRun: false
+  }, done).start();
 });
 
 gulp.task('watch', () => {
   gulp.watch('frontend/test/*.js', ['jasmine']);
 });
 
-gulp.task('default', ['jasmine', 'watch']);
+gulp.task('default', ['jasmine']);

@@ -4,7 +4,7 @@ var gulp =require('gulp'),
 
 gulp.task('jasmine', () => {
   return gulp.src('frontend/test/*.js')
-    .pipe(jasmine());
+    .pipe(jasmine({"verbose" : true, "config": {"helpers": ["../src/test.js"]}}));
 });
 
 gulp.task('watch', () => {
